@@ -19,8 +19,21 @@ Wasn't able to check what was the issue with the long duration of the function. 
 ##  Skipping Pages/Buttons.
   * Skipping the pages until you end in the one it crashed.
 
-##  Starting from End
+##  Moving Backwards
   * Use it after it crashes in the middle. You can start from the last page and move backwards to retrieve the data.
 
-# If statement
+## If statement
   * Used to avoid repetition between data retrieved on the same date.
+
+## page.waitForSelector()
+  * Use it so node will wait until it finds the field you are searching for.
+   * '>' indicates a child-parent relationship (a > img = an image inside a link).
+   * '.class' you use a period if you are searching for the class instead of the html element.
+   * '#id' hashtag indicates the field is an id (if <div id="abc123">...</div>, then use 'page.waitForSelector('#abc123');' for example.
+
+## page.$eval('element being searched', el=>el.textContent)
+ * Will return the text or the elements inside.
+  * can return the HTML or the text inside the element.
+
+## page.click()
+ * Will click on the element if it finds it.
