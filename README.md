@@ -29,7 +29,7 @@ Wasn't able to check what was the issue with the long duration of the function. 
   * Use it so node will wait until it finds the field you are searching for.
    * '>' indicates a child-parent relationship (a > img = an image inside a link).
    * '.class' you use a period if you are searching for the class instead of the html element.
-   * '#id' hashtag indicates the field is an id (if <code><div id="abc123">...</div></code>, then use 'page.waitForSelector('#abc123');' for example.
+   * '#id' hashtag indicates the field is an id (if < Div id="abc123">...< /Div >, then use 'page.waitForSelector('#abc123');' for example.
 
 ## page.$eval('element being searched', el=>el.textContent)
  * Will return the text or the elements inside.
